@@ -17,7 +17,7 @@ del, input, button, form, div
     box-sizing: content-box;
     margin: 0%;
 	padding: 0%;
-    border: 0px none none;
+    border: none;
     display: block;
 }
 
