@@ -17,9 +17,11 @@
     /* source | slice | width | outset | repeat */
     border-image: url(./botao.png)
     /* botao.png com 81px - 81/3 balls widht/height = 27 */
-    /* svg no funciona 100% */
+    /* svg nao funciona 100% */
     27 /     /* slice */
-    8px /    /* width */
-    0px      /* outset */
+    /* Diminuindo o 27 os cantos nao vao bater */
+    12px /    /* width */
+    3px      /* outset */
+    /* Para aumentar o tamanho width é necessario aumentar o outset */
     round; 
 }
