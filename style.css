@@ -1,29 +1,13 @@
-#container_1{
-    border: 2px solid;
-    border-top-left-radius: 10px;
-    padding: 15px;
-    border-bottom-color: seagreen;
-    margin-bottom: 15px;
-   
+#pai{
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+  
 }
-
-#container_2{
-    margin: 5px 15px 0px;
-    border: 3mm solid red;
-    border-image: linear-gradient(red, blue, white) 30;
-}
-
-#container_3{
-    width: 200px;
-    border: 8px solid red;
-    /* source | slice | width | outset | repeat */
-    border-image: url(./botao.png)
-    /* botao.png com 81px - 81/3 balls widht/height = 27 */
-    /* svg nao funciona 100% */
-    27 /     /* slice */
-    /* Diminuindo o 27 os cantos nao vao bater */
-    12px /    /* width */
-    3px      /* outset */
-    /* Para aumentar o tamanho width é necessario aumentar o outset */
-    round; 
+#filho{
+    background-color: turquoise;
+    width: 50px;
+    height: max-content;
+    height: 200px;
+    
 }
