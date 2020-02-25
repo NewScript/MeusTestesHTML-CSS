@@ -1,13 +1,28 @@
-#pai{
+/* Display block */
+#elemento_1{
     background-color: tomato;
     width: 100px;
     height: 100px;
   
 }
-#filho{
+#elemento_2{
     background-color: turquoise;
     width: 50px;
-    height: max-content;
-    height: 200px;
+    height: 100px;
+    
+}
+
+/* Display inline */
+
+#elemento_3{
+    display: inline;
+    color: rgb(134, 16, 16);
+    background-color: rgb(31, 7, 119);
+  
+}
+#elemento_4{
+    background-color: rgb(10, 122, 34);
+    width: 50px;
+    height: 100px;
     
 }
