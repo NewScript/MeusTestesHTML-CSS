@@ -13,5 +13,15 @@ h1, div{
 }
 
 p{
-    display: inline;
+    display: inline; /* colocar display:inline-block aqui resolveria o problema */
+    border: solid blueviolet;
+    /* margin-bottom: 5px; */
+    /* O codigo acima nao funciona por causa do display:inline */
+}
+
+#div5{
+    display: block;
+    border: solid red;
+    /* dando um jeitinho no problema das bordas sobrepondo-se */
+    margin-top: 5px;
 }
