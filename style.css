@@ -1,53 +1,15 @@
-#l100{
-    position: relative;
-    left: 100px;
+container{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border: solid;
+    width: 500px;
+    height: 200px;
+    padding: 5px;
+    text-align: justify;
 }
 
-#r-100{
-    position: relative;
-    right: -100px;
-}
 
-#r20{
-    position: relative;
-    right: 20px;
-}
-
-#t25l20{
-    position: relative;
-    top: 25px;
-    left: 20px;
-}
-
-#Testando{
-    color: red;
-}
-
-#t-25l20{
-    color: blue;
-    position: relative;
-    top: -25px;
-    left: 20px;
-}
-
-#b0l20{
-    position: relative;
-    bottom: 0px;
-    left: 20px;
-}
-
-#b-25l20{
-    color: cadetblue;
-    position: relative;
-    bottom: -25px;
-    left: 20px;
-}
-#b25l20{
-    color: rgb(101, 216, 153);
-    position: relative;
-    bottom: 25px;
-    left: 20px;
-}
 
 #chocolate{
     display: inline-block;
@@ -61,3 +23,76 @@
     display: inline-block;
 }
 
+#al100{
+    position: absolute;
+    left: 100px;
+}
+
+#ar-100{
+    position: absolute;
+    right: -100px;
+}
+
+#ar20{
+    position: absolute;
+    opacity: 50%;
+    right: 20px;
+}
+
+
+
+#t30l100{
+    position: absolute;
+    top: 30%;
+    left: 100px;
+}
+
+#t30r-100{
+    position: absolute;
+    top: 30%;
+    right: -100px;
+}
+
+#t35r100{
+    position: absolute;
+    top: 35%;
+    right: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+#at35l20{
+    position: absolute;
+    top: 35px;
+    left: 20px;
+}
+
+#at-25l20{
+    position: absolute;
+    top: -25px;
+    left: 20px;
+}
+
+#ab0l20{
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+#ab-25l20{
+    position: absolute;
+    bottom: -25px;
+    left: 20px;
+}
+#ab25l20{
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+}
