@@ -1,27 +1,63 @@
-h1, div{
-    display: inline;
+#l100{
+    position: relative;
+    left: 100px;
 }
 
-#div3{
-    display: block;
+#r-100{
+    position: relative;
+    right: -100px;
 }
 
-#div4{
-    /* Este div esta display: inline */
-     /* Definido para todas as divs logo acima */
-    background-color: khaki;
+#r20{
+    position: relative;
+    right: 20px;
 }
 
-p{
-    display: inline; /* colocar display:inline-block aqui resolveria o problema */
-    border: solid blueviolet;
-    /* margin-bottom: 5px; */
-    /* O codigo acima nao funciona por causa do display:inline */
+#t25l20{
+    position: relative;
+    top: 25px;
+    left: 20px;
 }
 
-#div5{
-    display: block;
-    border: solid red;
-    /* dando um jeitinho no problema das bordas sobrepondo-se */
-    margin-top: 5px;
+#Testando{
+    color: red;
 }
+
+#t-25l20{
+    color: blue;
+    position: relative;
+    top: -25px;
+    left: 20px;
+}
+
+#b0l20{
+    position: relative;
+    bottom: 0px;
+    left: 20px;
+}
+
+#b-25l20{
+    color: cadetblue;
+    position: relative;
+    bottom: -25px;
+    left: 20px;
+}
+#b25l20{
+    color: rgb(101, 216, 153);
+    position: relative;
+    bottom: 25px;
+    left: 20px;
+}
+
+#chocolate{
+    display: inline-block;
+    background-color: chocolate;
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+#pinline{
+    display: inline-block;
+}
+
