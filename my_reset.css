@@ -1,5 +1,6 @@
 body
 {
+    box-sizing: content-box;
 	color: black;
     margin: 0%;
     padding: 0.5%;
@@ -14,7 +15,6 @@ body
 h1, h2, h3, h4, h5, h6, p, strong, small, em,
 del, input, button, form, div
 {
-    box-sizing: border-box;
     margin: 0%;
 	padding: 0%;
     border: none;
