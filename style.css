@@ -6,8 +6,11 @@
 }
 
 #um{
+ 
     border-color: red;
     border-width: 10px;
+    text-align: center;
+
 }
 
 #tres{
