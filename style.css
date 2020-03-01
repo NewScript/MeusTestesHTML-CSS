@@ -1,41 +1,33 @@
-@font-face {
-    font-family: "MinhaFonte";
-    src: url(ITCEDSCR.ttf);
+h1{
+    display: block;
+    font-size: 11px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    font-weight: normal;
 }
 
-#zero{
-    color: white;
-    background-color: rgb(11, 82, 116);
-    font: 30px Arial;
+p{
+    display: block;
+    font-size: 11px;
+    margin-block-start: 10px;
+    margin-block-end: 0px;
+    font-weight: 900;
 }
 
-#um{
-    background-color: lawngreen;
-    font:  xx-large / 60px Arial;
+#teste{
+    display: inline;
+    font-size: 11px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    font-weight: 300;
 }
-#dois{
-    font: 30px Arial;
-}
+h2{
+    background-color: lightcoral;
+    margin: 0px;
+    width: 200px;
+    line-height: 200px;
+    text-align: center;
 
-#tres{
-    font: 30px Arial;
-}
-#tres p{
-    font:larger Arial;
-}
-
-#quatro{
-    font: 900 30px Arial;
-}
-
-#cinco{
-    font: extra-condensed 30px Arial;
-}
-
-#seis{
-    font: italic small-caps 900 extra-expanded 30px Arial;
-}
-
-#sete{
-    font: 30px MinhaFonte;
 }
