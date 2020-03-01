@@ -9,51 +9,32 @@
     </head>
     <body>
 
-        <p>width: 100px; height: 50px; padding: 10px;</p>
-
-        <p>-------------------------------</p>
-
-        <p>box-sizing: content-box;</p>
-
-        <h1 id="um" class="geral">Titulo</h1>
-
-        <p>height:50px + margin-top:10px + margin-bottom:10px = height real: 70px</p>
-
-        <br id="F_dois">
-
-        <br>
-
-        <p>box-sizing: border-box;</p>
-
-        <h1 id="dois" class="geral">Titulo</h1>
-        
-        <br>
-
-        <p>box-sizing: content-box;</p>
-
-        <div id="dUm" class="geral"></div>
-        
-        <br>
-
-        <p>box-sizing: border-box;</p>
-
-        <div id="dDois" class="geral"></div>
-
-        <br>
-
-        <p>100px/50px real</p>
-
-        <img src="./Width100px.png" alt="Width100px" srcset="">
-
-        <p id="explanacao">
-
-            box-sizing: border-box; é algo mais real,fixo, porém
-            a visualização das páginas webs é mais dinânimica, ou
-            seja, o ideal é box-sizing: content-box; para a visualização
-            geral, desde que eu aprenda a centralizar o content
-            verticalmente.
-
+        <p style="float: left; margin-left: 150px;">
+            box-sizing: content-box;
+            width: 100px;
+            height: 100px;
+            border-width: 10px; - Tamanho real 100 + 10 + 10 = 120px width
         </p>
+
+        <div id="um" class="geral"></div>
+        
+        <p style="float: left; margin-left: 150px;">
+            box-sizing: content-box;
+            width: 100px;
+            height: 100px;
+            border-width: 1px; - Tamanho real 100 + 1 + 1 = 102px width
+        </p>
+
+        <div id="dois" class="geral"></div>
+
+        <p style="float: left; margin-left: 150px;">
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            border-width: 10px; - Tamanho real 100px width
+        </p>
+
+        <div id="tres" class="geral"></div>
        
     </body>
 </html>
