@@ -1,21 +1,41 @@
-.geral{
-    width: 100px;
-    height: 100px;
-    background-color: blueviolet;
-    border: 1px solid;
+@font-face {
+    font-family: "MinhaFonte";
+    src: url(ITCEDSCR.ttf);
+}
+
+#zero{
+    color: white;
+    background-color: rgb(11, 82, 116);
+    font: 30px Arial;
 }
 
 #um{
- 
-    border-color: red;
-    border-width: 10px;
-    text-align: center;
-
+    background-color: lawngreen;
+    font:  xx-large / 60px Arial;
+}
+#dois{
+    font: 30px Arial;
 }
 
 #tres{
-     box-sizing: border-box;
-     background-color:salmon;
-     border-width: 10px;
+    font: 30px Arial;
+}
+#tres p{
+    font:larger Arial;
+}
 
+#quatro{
+    font: 900 30px Arial;
+}
+
+#cinco{
+    font: extra-condensed 30px Arial;
+}
+
+#seis{
+    font: italic small-caps 900 extra-expanded 30px Arial;
+}
+
+#sete{
+    font: 30px MinhaFonte;
 }
