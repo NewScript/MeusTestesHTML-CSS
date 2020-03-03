@@ -1,33 +1,29 @@
-h1{
-    display: block;
-    font-size: 11px;
-    margin-block-start: 10px;
-    margin-block-end: 10px;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
-    font-weight: normal;
+body{
+    font: 12px Arial;
 }
 
-p{
-    display: block;
-    font-size: 11px;
-    margin-block-start: 10px;
-    margin-block-end: 0px;
-    font-weight: 900;
+um{
+    text-transform: capitalize;
 }
-
-#teste{
+dois{
+    text-transform: uppercase;
+}
+tres{
+    text-transform: lowercase;
+}
+quatro{
+    text-transform: none;
+}
+#fullwidth{
+    background-color: mediumpurple;
+    text-transform: full-width;
+    width: 300px;
+}
+div{
+    width: 300px;
+    background-color: mediumpurple;
+}
+#textAlignJustify{
     display: inline;
-    font-size: 11px;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
-    font-weight: 300;
-}
-h2{
-    background-color: lightcoral;
-    margin: 0px;
-    width: 200px;
-    line-height: 200px;
-    text-align: center;
-
+    text-align: justify;
 }
