@@ -1,29 +1,27 @@
-body{
-    font: 12px Arial;
+h1[id]{
+    color: lawngreen;
 }
 
-um{
-    text-transform: capitalize;
+h1[id="Teste3"]{
+    color: rgb(252, 59, 0);
 }
-dois{
-    text-transform: uppercase;
+
+h1[id^="4"]{
+    color: rgb(0, 130, 252);
 }
-tres{
-    text-transform: lowercase;
+
+h1[id$="5"]{
+    color: rgb(252, 0, 0);
 }
-quatro{
-    text-transform: none;
+
+h1[id*="Mercado" i]{
+    color: rgb(4, 0, 252);
 }
-#fullwidth{
-    background-color: mediumpurple;
-    text-transform: full-width;
-    width: 300px;
+
+h2, h3{
+    border: solid;
 }
-div{
-    width: 300px;
-    background-color: mediumpurple;
-}
-#textAlignJustify{
-    display: inline;
-    text-align: justify;
+
+div *{
+    border: solid red;
 }
