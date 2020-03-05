@@ -10,6 +10,62 @@
 
     <body>
 
+        <h2>Elaine</h2>
+        <h3>Elaine</h3>
+        <pre>
+        h2 Elaine h2
+        h3 Elaine h3
+
+        h2, h3{
+            border: solid;
+        }
+        </pre>
+
+        <span>
+            <h2>Elaine</h2>
+            <span>
+                <h2>Elaine</h2>
+            </span>
+            <h2>Elaine</h2>
+        </span>
+        <pre>
+        span
+            h2 Elaine h2
+            span
+                h2 Elaine h2
+            span
+            h2 Elaine h2
+        span
+
+        span span h2{
+            border: none;
+            color: midnightblue;
+        }
+        </pre>
+
+        <div id="m1">
+        O primeiro e o terceiro H2 não recebe a cor porque não esta na hierarquia span span h2 mais recebe a borda do exemplo anterior <br><br>
+        A borda definida no exemplo acima é retirada e é aplicada uma cor no h2 do meio <br>
+        </div>
+
+        <h1 id="Teste0">Elaine</h1>
+        <pre>
+        h1 id="Teste0" Elaine h1
+           
+        #Teste0{
+            background-color: khaki;
+        }
+        </pre>
+
+        <h1 class="Teste0">Elaine</h1>
+        <pre>
+        h1 class="Teste0" Elaine h1
+           
+        .Teste0{
+            background-color: lightcoral;
+        }
+        </pre>
+
         <h1 id="Teste1">Elaine</h1>
         <h1 id="Teste2">Elaine</h1>
         <pre>
@@ -57,14 +113,6 @@
         }
         </pre>
 
-        <h2>Elaine</h2>
-        <h3>Elaine</h3>
-        <pre>
-        h2, h3{
-                border: solid;
-        }
-        </pre>
-
         <div>
             <h2>Elaine</h2>
             <h3>Elaine</h3>
@@ -79,6 +127,101 @@
             border: solid red;
         }
         </pre>
+
+
+        <div id="m2">
+            Observe que as bordas são aplicadas a todos os elementos dentro da div e não na div
+        </div>
+
+        <div>
+            <p>Elaine</p>
+            <div>
+                <p>Elaine</p>
+            </div>
+        </div>
+        <pre>
+            div
+                p Elaine p
+                div
+                    p Elaine p
+                div
+            div
+
+            div > p{
+                border: none;
+            }
+        </pre>
+
+        <div id="m2">
+            Apenas p filho direto de div ( div > p ) foi afetado, ou seja,
+             perdeu a borda estipulada no exemplo anteriro
+        </div>
+
+        <div>
+            <p>Elaine</p>
+            <div>
+                <p>Elaine</p>
+            </div>
+        </div>
+        <pre>
+            div
+                p Elaine p
+                div
+                    p Elaine p
+                div
+            div
+
+            div ~ p{
+                color:magenta;
+            }
+        </pre>
+
+        <div id="m2">
+            O chrome nau supórta <br>
+            Todas as tag p irmãs de div ( que estão dentro de div, não importa a posição ) 
+            ficarão magenta
+        </div>
+
+        <div>
+            <p>Elaine</p>
+            <p>Elaine</p>
+            <div>
+                <p>Elaine</p>
+            </div>
+        </div>
+        <pre>
+            div
+                p Elaine p
+                p Elaine p
+            div
+
+            div + p{
+                border: none;
+            }
+        </pre>
+
+        <div id="m2">
+            Todas as tag p adjacentes diretamente a div ( que estão dentro de div, não importa a posição ) 
+            perderão as bordas
+        </div>
+
+        <article id="m3">
+        <p> Pseudo element ::first-line - somente a primeira linha da tag article sera afetada por
+            esse recurso muito interessante</p>
+        </article>
+
+        <article id="m4">
+           <p>Pseudo element ::first-letter - somente a primeira linha da tag article sera afetada por
+            esse recurso muito interessante</p>
+        </article>
+
+        <article id="m5">
+            <input type="checkbox" name="testey" id="testew">
+            <p for="testey">Pseudo element ::selection - altera o conteudo selecionado pelo usuario - Só funciona com 
+                algum ativador, jascript ou checked...
+            </p>
+         </article>
+        
     </body>
 
 </html>

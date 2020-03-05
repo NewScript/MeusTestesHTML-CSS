@@ -25,3 +25,90 @@ h2, h3{
 div *{
     border: solid red;
 }
+
+#Teste0{
+background-color: khaki;
+}
+
+.Teste0{
+    background-color: lightcoral;
+}
+
+span span h2{
+    border: none;
+    color: midnightblue;
+}
+
+
+
+div > p{
+    border: none;
+}
+
+div div ~ p{
+    color:magenta;
+}
+
+div + p{
+    border: none;
+}
+
+article::first-line{
+    color: maroon;
+}
+
+article p::first-letter{
+    color: rgb(48, 15, 233);
+}
+
+#testew:checked{
+    
+}
+
+article::selection{
+    transform: scaleX(150%);
+}
+
+#m1{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    left: 300px;
+    top: -150px;
+    font-size: 11px;
+}
+
+#m2{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    left: 300px;
+    top: -100px;
+    font-size: 11px;
+}
+
+#m3{
+    position: relative;
+    left: 100px;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#m4{
+    position: relative;
+    left: 100px;
+    top: 100px;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#m5{
+    position: relative;
+    left: 100px;
+    top: 200px;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+}
