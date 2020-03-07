@@ -1,26 +1,36 @@
+@font-face {
+    font-family: "Arial";
+    src: url(arial.ttf);
+}
+
 body
 {
-    box-sizing: content-box;
 	color: black;
-    margin: 0%;
-    padding: 0.5%;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    position: static;
-    float: none;
-    display:block;
+    margin: 0%; /*no inherit*/
+    padding: 0.5%; /*no inherit*/
+    border: none; /*no inherit*/
+    background-color: rgb(255, 255, 255); /*no inherit*/
+    font-family: arial, Helvetica, sans-serif;
+    font-size: 11px;
 }
 
 h1, h2, h3, h4, h5, h6, p, strong, small, em,
 del, input, button, form, div, pre
 {
-    margin: 0%;
-	padding: 0%;
-    border: none;
+    position: static;
+    float: none;
     display: block;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+    padding: 0%;
+    border: none;
 }
 
 strong, small, em{
     display: inline;
+}
+
+pre{
+    font: normal normal;
 }
