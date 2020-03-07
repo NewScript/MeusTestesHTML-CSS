@@ -53,20 +53,46 @@ div + p{
     border: none;
 }
 
-article::first-line{
-    color: maroon;
+#m3::first-line{
+    color: rgb(230, 25, 25);
 }
 
-article p::first-letter{
-    color: rgb(48, 15, 233);
+#m4 p::first-letter{
+    color: rgb(10, 139, 199);
+    border: solid;
+    padding: 3px 3px 0px 3px;
 }
 
-#testew:checked{
-    
+#ola:checked ~ p{
+    color: Violet;
 }
 
-article::selection{
-    transform: scaleX(150%);
+input:checked + p{
+    border:solid;
+	background-color:blue;
+}
+
+#texto::selection{
+	color:White;
+	background-color:blue;
+	outline: dashed red;
+}
+
+#texto:active{
+  color:YellowGreen;
+  font-size:30px;
+}
+
+#outro{
+  width:100px;
+  border:solid;
+  background-color:Cyan;
+  
+}
+
+#outro:hover{
+  transform:scale(6) translateX(50px) rotate(360deg);
+  transition:all 0.5s linear;
 }
 
 #m1{
@@ -87,27 +113,29 @@ article::selection{
     font-size: 11px;
 }
 
-#m3{
+#m3, #m4{
     position: relative;
-    left: 100px;
-    width: 300px;
-    height: 30px;
-    font-size: 20px;
+    width: 200px;
+    height: 100px;
+}
+
+#m3{
+    top: 0px;
+    left: 20px
 }
 
 #m4{
-    position: relative;
-    left: 100px;
-    top: 100px;
+    top: -100px;
+    left: 350px;
+}
+
+#m5{
     width: 300px;
     height: 30px;
     font-size: 20px;
 }
 
-#m5{
-    position: relative;
-    left: 100px;
-    top: 200px;
+#texto{
     width: 300px;
     height: 30px;
     font-size: 20px;

@@ -193,6 +193,9 @@
             div
                 p Elaine p
                 p Elaine p
+                div
+                    p Elaine p
+                div
             div
 
             div + p{
@@ -202,25 +205,57 @@
 
         <div id="m2">
             Todas as tag p adjacentes diretamente a div ( que estão dentro de div, não importa a posição ) 
-            perderão as bordas
+            perderão as bordas <br> Não é a mesma coisa que div > p - descrito acima?
         </div>
 
         <article id="m3">
         <p> Pseudo element ::first-line - somente a primeira linha da tag article sera afetada por
             esse recurso muito interessante</p>
+        <pre>
+
+article id="m3"
+    p ... p
+/article
+
+article::first-line{
+    color: maroon;
+}
+        </pre>
         </article>
 
         <article id="m4">
            <p>Pseudo element ::first-letter - somente a primeira linha da tag article sera afetada por
             esse recurso muito interessante</p>
+            <pre>
+            
+article id="m4"
+    p ... p
+/article
+                
+#m4 p::first-letter{
+    color: rgb(48, 15, 233);
+}
+            </pre>
         </article>
+        
 
         <article id="m5">
-            <input type="checkbox" name="testey" id="testew">
-            <p for="testey">Pseudo element ::selection - altera o conteudo selecionado pelo usuario - Só funciona com 
+            <input type="checkbox" id="ola">
+            <p>Pseudo element ::selection - altera o conteudo selecionado pelo usuario - Só funciona com 
                 algum ativador, jascript ou checked...
             </p>
+		  <p>Pseudo element ::selection - altera o conteudo selecionado pelo usuario - Só funciona com 
+			algum ativador, jascript ou checked...
+		  </p>
          </article>
+		 
+	  <p id="texto">Pseudo element ::selection - altera o conteudo selecionado pelo usuario - Só funciona com 
+		algum ativador, jascript ou checked...
+	  </p>
+	  
+	  <div id="outro">
+		<p>rrr</p>
+	  </div>
         
     </body>
 
