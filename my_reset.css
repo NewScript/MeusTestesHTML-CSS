@@ -15,7 +15,7 @@ body
 }
 
 h1, h2, h3, h4, h5, h6, p, strong, small, em,
-del, input, button, form, div, pre
+del, input, button, form, div, pre, img, figcaption, figure
 {
     position: static;
     float: none;

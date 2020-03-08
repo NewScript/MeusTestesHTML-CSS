@@ -1,0 +1,15 @@
+:first-child{
+    text-indent: 15px;
+}
+
+p:nth-child(2){
+    background-color: rgb(94, 49, 167);
+}
+
+:nth-child(4){
+    border: solid;
+}
+
+:nth-child(5){
+    background-color: rgb(49, 143, 167);
+}
