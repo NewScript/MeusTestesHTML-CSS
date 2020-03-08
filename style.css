@@ -1,60 +1,91 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-body{
-    margin: 5px;
-}
-
-body :first-child{
-    text-indent: 30px;
-}
-
-div, span{
-    display: block;
-    margin-left:15px;
-}
-
-.Pai{
-    border: solid;
-}
-
-body :first-of-type{
-    background-color: lime;
-}
-
-body div p:first-child{
-    background-color: mediumorchid;
-}
-
-body :last-child{
-    text-indent: 60px;
-}
-
-body :nth-child(4){
-    border-style: double;
-}
-
-body div:nth-child(4){
-    border-right: none;
-}
-
-body span:nth-of-type(3){
- background-color: yellow;
-}
-
-body span:nth-last-of-type(2)::first-letter{
-    color: darkblue;  
-    font-size: 230%;
-    font-weight: 900;
-}
-
-body span:first-of-type::before{
-    content: "------>";
+body [type]{
+    font-size: 30px;
     color: red;
-    font-size: 230%;
-    font-weight: 900;
+}
+
+/* body :not([type]){
+    font-size: 30px;
+    color: red;
+} */
+
+body [type="text"]{
+    border: solid black;
+}
+
+/* Mesma coisa que acima */
+body [class~="Pai"]{
+    color: red;
+}
+
+/* Deveria funcionar com uma lista, mas, num funciona
+body [class~="Torre Destaque Pai"]{
+    color: red;
+} */
+
+
+body [carlos]{
+    font-size: 30px;
+    color: rgb(9, 104, 29);
+}
+
+/* Esquece o body [id|="meu-"] */
+
+body [id^="meu-"]{
+    border:solid;
+}
+
+body a[href$="manual"]{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 5px 0 5px;
+    border: double rgb(5, 109, 19);
+}
+
+body [href$="manual"]::before{
+    content: "---->     ";
+}
+
+body [href*=".com.br"]::after{
+    content: "     <----";
 }
 
 
+/* Todos os p filhos de class Pai */
+body .Pai > p{
+    font-size: 20px;
+}
+
+
+/* Afeta os elementos p DEPOIS do class .Pai e 
+não os 1 filhos dos .pais */
+body .Pai + p::after{
+    content: "----------------";
+}
+
+/* ou é o de cima ou o de baixo
+body .Pai ~ p::after{
+    content: "+++++++++++++++++";
+} */
+
+body .Pai + p:not([type]){
+    color:rgb(255, 0, 191);
+    /* Este define a cor do texto do elemnto
+    11 porque é mais especifico
+    que a regra do elemento 10
+    logo abaixo */
+}
+
+body :nth-last-child(2){
+    background-color: darksalmon;
+}
+
+body div p:nth-of-type(3){
+    background-color: rgb(1, 22, 22);
+    color: white;
+}
+
+/* Se article tiver apenas UM filho */
+body article :only-child{
+    background-color: yellow;
+    font-size: 20px;
+}
