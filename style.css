@@ -1,5 +1,9 @@
-.example {
+div {
+  position: relative;
   font: 20px Arial;
-    text-align: justify;
-    border: solid;
-  }
+}
+.Teste{
+  width: 100px;
+  border: 2px solid red;
+  transform: rotate(45deg);
+}
