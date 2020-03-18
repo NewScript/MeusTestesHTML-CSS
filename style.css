@@ -1,9 +1,6 @@
-div {
-  position: relative;
-  font: 20px Arial;
+.Teste {
+  color: #160768;
+  border: solid #0011ff;
 }
-.Teste{
-  width: 100px;
-  border: 2px solid red;
-  transform: rotate(45deg);
-}
+
+/*# sourceMappingURL=style.css.map */
