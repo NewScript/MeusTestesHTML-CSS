@@ -3,4 +3,14 @@ $cor: rgb(22, 7, 104);
 .Teste{
     color: $cor;
     border: solid rgb(0, 17, 255); 
+    &:after{
+        content: "   <-----";
+    }
 }
+
+p {
+    font: {
+    size: 20px;
+    style: italic;
+    variant-caps: small-caps;
+}}
