@@ -1,16 +1,16 @@
 $cor: rgb(22, 7, 104);
-
+$tamanho: 10;
 .Teste{
     color: $cor;
     border: solid rgb(0, 17, 255); 
-    &:after{
+    :after{
         content: "   <-----";
     }
 }
 
 p {
     font: {
-    size: 20px;
+    size: 20 + $tamanho+px;
     style: italic;
     variant-caps: small-caps;
 }}
