@@ -1,0 +1,12 @@
+li{
+    float: left;
+}
+:root img:nth-child(2){
+  background-color: lawngreen;
+  clear: both;
+}
+
+li:nth-last-child(1){
+    background-color: lightcoral;
+  
+}
