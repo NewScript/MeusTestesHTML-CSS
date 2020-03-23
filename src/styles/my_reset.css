@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Arial";
-    src: url(arial.ttf);
+    src: url(../fonts/arial.ttf);
 }
 
 body
@@ -9,7 +9,7 @@ body
     margin: 0%; /*no inherit*/
     padding: 0.5%; /*no inherit*/
     border: none; /*no inherit*/
-    background-color: rgb(255, 255, 255); /*no inherit*/
+    background-color: transparent; /*no inherit*/
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
 }
@@ -22,13 +22,13 @@ del, input, button, form, div, pre, img, figcaption,
     float: none;
     display: block;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
+    background-color:transparent;
     margin: 0%;
     padding: 0%;
     border: none;
 }
 
-strong, small, em{
+strong, small, em, a{
     display: inline;
 }
 
