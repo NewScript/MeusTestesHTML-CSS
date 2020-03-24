@@ -1,21 +1,26 @@
+:root{
+    --alturaImg: 30px;
+    --larguraImg: 30px;
+    --alturaDiv: 134px;
+}
+
 #um{
-    display: flex;
     background-color: skyblue;
-    height: 134px;
+    height: var(--alturaDiv);
     width: 134px;
-    align-items: center;
 }
 
 #dois{
     margin: auto;
-
-    height: 30px;
-    width: 30px;
+    height: var(--alturaImg);
+    width: var(--larguraImg);
+    background-color: sienna;
+    position: relative;
+    top:Calc((var(--alturaDiv)/2) - (var(--alturaImg)/2));
 }
 
 #tres{
-    margin: auto;
-    height: 30px;
-    width: 30px;
- 
+    
+    height: var(--alturaImg);
+    width: var(--larguraImg);
 }
