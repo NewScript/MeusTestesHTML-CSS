@@ -1,12 +1,21 @@
-li{
-    float: left;
-}
-:root img:nth-child(2){
-  background-color: lawngreen;
-  clear: both;
+#um{
+    display: flex;
+    background-color: skyblue;
+    height: 134px;
+    width: 134px;
+    align-items: center;
 }
 
-li:nth-last-child(1){
-    background-color: lightcoral;
-  
+#dois{
+    margin: auto;
+    background-color: rgb(9, 3, 46);
+    height: 30px;
+    width: 30px;
+}
+
+#tres{
+    margin: auto;
+    height: 30px;
+    width: 30px;
+    background-color: sandybrown;
 }
