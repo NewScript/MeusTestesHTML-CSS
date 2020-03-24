@@ -1,13 +1,19 @@
 img{
     width: 30px;
-    float: left; Sem espaços entre as imagens
-    /* display: inline-block; com espaços entre as imagens */
 }
 
 #um{
-    
     padding: 5px;
     display: inline-block;
     background-color: rosybrown;
+}
+
+li{
+    list-style-type: none;
+    float: left;
+}
+
+img:not(#cinco){
+    margin-right: 20px;
 }
 
